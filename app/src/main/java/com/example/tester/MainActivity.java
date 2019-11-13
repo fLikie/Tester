@@ -1,55 +1,32 @@
 package com.example.tester;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.dynamicanimation.animation.DynamicAnimation;
 import androidx.dynamicanimation.animation.FlingAnimation;
-import androidx.dynamicanimation.animation.SpringAnimation;
 
 import android.animation.LayoutTransition;
-import android.database.Cursor;
-import android.database.SQLException;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteException;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.Canvas;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
-import android.util.TypedValue;
 import android.view.MotionEvent;
 import android.view.VelocityTracker;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.view.animation.CycleInterpolator;
 import android.view.animation.LinearInterpolator;
 import android.view.animation.RotateAnimation;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextSwitcher;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.neo.arcchartview.ArcChartView;
 
-import org.w3c.dom.Text;
-
-import java.io.File;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
-import java.util.ListIterator;
-import java.util.Map;
-import java.util.Vector;
 
 public class MainActivity extends AppCompatActivity implements View.OnTouchListener {
     public int[] stats = new int[6];
@@ -76,7 +53,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //Setting buttons and view
+
         thirdAnswer = (Button) findViewById(R.id.thirdAnswer);
         startTest = (Button) findViewById(R.id.startTest);
         firstAnswer = (Button) findViewById(R.id.firstAnswer);
@@ -92,7 +69,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
                     .enableTransitionType(LayoutTransition.CHANGING);
         }
 
-        //Getting question and descriptions
+
         questions = getResources().getStringArray(R.array.question);
         firstAnswers = getResources().getStringArray(R.array.firstAnswers);
         secondAnswers = getResources().getStringArray(R.array.secondAnswers);
