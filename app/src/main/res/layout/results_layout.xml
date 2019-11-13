@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.neo.arcchartview.ArcChartView
+        android:id="@+id/arc_chart_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:acv_lines_count="12"
+        app:acv_lines_width="5dp"
+        app:acv_lines_space="5dp"
+        app:acv_sections_count="6"
+        app:acv_sections_space="2dp"
+        app:acv_icon_size="40dp"
+        app:acv_mid_start_extra_offset="12dp"
+        app:acv_allow_setting_value_by_touch="false"
+        />
+
+    <Button
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Узнать результаты в текстовом виде"
+        app:layout_constraintBottom_toTopOf="@+id/arc_chart_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp">
+
+    <TextView
+        android:id="@+id/textResultOne"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/textResultTwo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textResultOne"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/textResultThree"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textResultTwo"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/textResultFour"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textResultThree"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/textResultFive"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textResultFour"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/textResultSix"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textResultFive"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/ResultOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@id/textResultOne"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/ResultTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ResultOne"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="9dp"
+        android:layout_toRightOf="@id/textResultTwo"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/ResultThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ResultTwo"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@id/textResultThree"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/ResultFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ResultThree"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@id/textResultFour"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/ResultFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ResultFour"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/textResultFive"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/ResultSix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ResultFive"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/textResultSix"
+        android:layout_toRightOf="@id/textResultSix"
+        android:text="0" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/commends"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_below="@id/commends"
+        android:id="@+id/professions"/>
+
+</RelativeLayout>
